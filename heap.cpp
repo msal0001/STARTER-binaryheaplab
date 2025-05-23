@@ -60,7 +60,7 @@ void Heap::pop(){
 // Returns the minimum element in the heap
 int Heap::top(){
   if(vdata.empty()){
-    return;
+    throw std::runtime_error("heap is empty");
   }
   return vdata[0];
 }
